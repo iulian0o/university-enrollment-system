@@ -25,12 +25,10 @@ This repository is organized as a monorepo:
 /
 ├── backend/          # Node.js, Express, TypeScript, SQLite
 │   ├── src/
-│   │   ├── legacy/   # ❌ The "God Function" (Refactor this!)
-│   │   ├── domain/   # ✅ Where your Entities & Value Objects live
-│   │   └── ...
+│   │   ├── server.ts # Main entry point
 │   └── SPECS.md      # 📜 The "Ubiquitous Language" & Business Rules
 │
-├── frontend/         # Simple Client to test your API
+├── frontend/         # Simple Client to test API
 │   └── ...
 │
 └── README.md         # This file
