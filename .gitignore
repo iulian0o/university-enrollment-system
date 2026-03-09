@@ -1,21 +1,6 @@
-/backend/node_modules
-/backend/dist
-/backend/.env
-/backend/.env.local
-/backend/.env.development
-/backend/*.db
-/backend/university.db
+node_modules
 
 
-
-/frontend/node_modules
-/frontend/dist
-/.env
-/.env.local
-/.env.development
-/.env.production
-/.env.test
-/.vscode
 .DS_Store
 .idea
 *.log
@@ -27,5 +12,16 @@
 *.swn
 *.swn
 *.swn
-*.swn       
+*.swn 
+
+dist
+build
+coverage
+logs
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+.vscode
 
