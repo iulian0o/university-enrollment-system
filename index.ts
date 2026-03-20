@@ -33,15 +33,15 @@ function setupEventListeners(eventEmitter: EventEmitter): void {
   eventEmitter.subscribe<CourseCapacityReachedEvent>(
     "CourseCapacityReached",
     (event) => {
-      console.log(`⚠️  [CourseCapacityReached] ${event.courseName} is ${event.percentage}% full!`);
-      console.log(`   📊 Enrolled: ${event.enrolledCount}/${event.capacity}\n`);
+      console.log(`[CourseCapacityReached] ${event.courseName} is ${event.percentage}% full!`);
+      console.log(`Enrolled: ${event.enrolledCount}/${event.capacity}\n`);
     }
   );
 
   // Listen for CourseFull events (100% capacity)
   eventEmitter.subscribe<CourseFullEvent>("CourseFull", (event) => {
-    console.log(`🚫 [CourseFull] ${event.courseName} is now FULL!`);
-    console.log(`   📊 Capacity: ${event.capacity}/${event.capacity}\n`);
+    console.log(`[CourseFull] ${event.courseName} is now FULL!`);
+    console.log(`Capacity: ${event.capacity}/${event.capacity}\n`);
   });
 
   // Listen for EnrollmentCancelled events
@@ -71,7 +71,7 @@ function printError(error: Error): void {
 // Main CLI Function
 
 function main(): void {
-  console.log("\n🎓 University Enrollment System - CLI Demo\n");
+  console.log("\nUniversity Enrollment System - CLI Demo\n");
   console.log("Demonstrating Domain-Driven Design with Branded Types and Observer Pattern\n");
 
   // Initialize the system
