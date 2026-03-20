@@ -1,6 +1,6 @@
 
-import { BaseEntity } from "./base-entity";
-import { CourseCode, Credits } from "./branded-types";
+import { BaseEntity } from "./base_entity";
+import { CourseCode, Credits } from "./branded_types";
 
 export class Course extends BaseEntity<CourseCode> {
   private readonly _name: string;

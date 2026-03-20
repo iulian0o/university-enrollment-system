@@ -10,7 +10,9 @@ import {
 export class Student extends BaseEntity<StudentId> {
   private readonly _name: string;
   private readonly _email: Email;
+  // Map of semester to credits enrolled
   private _creditsBySemester: Map<Semester, number>;
+  // Map of semester to array of course codes
   private _coursesBySemester: Map<Semester, CourseCode[]>;
 
   constructor(
@@ -26,6 +28,8 @@ export class Student extends BaseEntity<StudentId> {
     this._creditsBySemester = new Map(creditsBySemester);
     this._coursesBySemester = new Map(coursesBySemester);
   }
+
+  // Getters
 
   get name(): string {
     return this._name;
@@ -160,4 +164,3 @@ export class Student extends BaseEntity<StudentId> {
     return `${this.name} (${this.id})\n${semesterSummaries.join("\n")}`;
   }
 }
-

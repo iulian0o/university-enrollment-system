@@ -1,11 +1,11 @@
 
-import { BaseEntity } from "./base-entity";
+import { BaseEntity } from "./base_entity";
 import {
   EnrollmentId,
   StudentId,
   CourseCode,
   Semester,
-} from "./branded-types";
+} from "./branded_types";
 
 export type EnrollmentStatus = "active" | "cancelled";
 

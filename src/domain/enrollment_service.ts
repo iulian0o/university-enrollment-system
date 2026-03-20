@@ -1,8 +1,8 @@
 
-import { Student } from "./student.entity";
-import { Course } from "./course.entity";
-import { Enrollment, findDuplicateEnrollment } from "./enrollment.entity";
-import { EventEmitter } from "../infrastructure/event-emitter";
+import { Student } from "./student_entity";
+import { Course } from "./course_entity";
+import { Enrollment, findDuplicateEnrollment } from "./enrollment_entity";
+import { EventEmitter } from "../infrastructure/event_emitter";
 import {
   createStudentEnrolledEvent,
   createEnrollmentCancelledEvent,
@@ -15,7 +15,7 @@ import {
   CourseCode,
   Semester,
   generateEnrollmentId,
-} from "./branded-types";
+} from "./branded_types";
 
 export class EnrollmentService {
   private eventEmitter: EventEmitter;
